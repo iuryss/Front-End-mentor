@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #C8ACD6;
+}
+
+header {
+    width: 100vw;
+    height: 32vh;
+    background: url("./assets/images/background-pattern-desktop.svg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+main{
+    width: 100vw;
+    height: 68vh;
+    background-color: #C8ACD6;
+    
+}
+
+.main-box {
+    background-color: #fff;
+    width: 30vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 35px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    flex-grow: 1;
+    transition: 0.3s ease; 
+}
+
+a:hover{
+    color: #7C00FE;
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('./assets/images/icon-plus.svg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.rows {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottom {
+    display: none;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    max-height: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bottom p{
+    opacity: 0.6;
+}
+
+.bottom.show {
+    display: block;
+    opacity: 1;
+    max-height: 200px; /* Adjust based on content */
+}
+
+/* Optional: Adjust button appearance */
+button:hover {
+    opacity: 0.7;
+}
+
+button.active{
+    background: url('./assets/images/icon-minus.svg');
+}
+
