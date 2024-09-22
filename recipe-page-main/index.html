@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet (basic styles for structure, detailed CSS to be added later) -->
+  <style>
+    body {
+      height: 100vh;
+      width: 100vw;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #FEF3E2;
+    }
+    .recipe {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .recipe img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .recipe h1, .recipe h2, .recipe h3 {
+      font-family: 'Lora', serif;
+    }
+
+    .recipe h2, .recipe h3{
+      color: darkred;
+    }
+
+    .recipe h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .recipe p {
+      margin-bottom: 1.5rem;
+    }
+    .timing{
+      background-color: #FFEFEF;
+      padding: 10px;
+      border-radius: 10px ;
+    }
+    .timing ul {
+      list-style: none;
+      padding: 0;
+    }
+    .timing ul li {
+      margin-bottom: 0.5rem;
+    }
+    .recipe ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .recipe hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 1.5rem 0;
+    }
+    .recipe span {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="recipe">
+      <img src="./assets/images/image-omelette.jpeg" alt="Omelette Image">
+
+      <h1>Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+      <div class="timing">
+        <h3>Preparation time</h3>
+        <ul>
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
+        </ul>
+      </div>
+
+      <h2>Ingredients</h2>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+
+      <hr>
+
+      <h2>Instructions</h2>
+      <ul>
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Nutrition</h2>
+      <span>The table below shows nutritional values per serving without the additional fillings.</span>
+      <ul>
+        <li><b>Calories:</b> 277kcal</li>
+        <li><b>Carbs:</b> 0g</li>
+        <li><b>Protein:</b> 20g</li>
+        <li><b>Fat:</b> 22g</li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>
